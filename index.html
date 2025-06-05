@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Siara Couture ✨</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 style="font-family: Brush Script MT, Brush Script Std, cursive;">💛 Siara Couture 💛</h1>
+      <div class="filter">
+        <label for="categoryFilter">Category Filter:</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="casual">Casual</option>
+          <option value="vacation">Vacation</option>
+          <option value="party">Party</option>
+          <option value="birthday">Birthday</option>
+        </select>
+      </div>
+    </header>
+
+    <div class="carousel-wrapper">
+      <button id="prevButton">❮</button>
+      <section class="carousel" id="productCarousel">
+        <div class="product-card" data-category="casual">
+          <img src="floraldress.jpg" alt="Floral Summer Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Floral Summer Dress</h3>
+            <p>₹1899</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="party">
+          <img src="elegantgown.jpg" alt="Elegant Evening Gown" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Elegant Evening Gown</h3>
+            <p>₹2999</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="casual">
+          <img src="bohomaxi.jpg" alt="Boho Maxi Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Boho Maxi Dress</h3>
+            <p>₹2779</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="casual">
+          <img src="silkdress.jpg" alt="Modern Silk Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Modern Silk Dress</h3>
+            <p>₹2335</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="vacation">
+          <img src="applepie.jpg" alt="Apple Pie Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Apple pie Dress</h3>
+            <p>₹1999</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="vacation">
+          <img src="dreamy.jpg" alt="Dreamy Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Dreamy Dress</h3>
+            <p>₹1999</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="vacation">
+          <img src="freespirit.jpg" alt="Free Spirit Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Free spirit Dress</h3>
+            <p>₹1799</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="birthday">
+          <img src="pinkprincess.jpg" alt="Pink Princess Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Pink Princess Dress</h3> Dress</h3>
+            <p>₹3299</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="birthday">
+          <img src="redrhode.jpg" alt="Red Rhode Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Red Rhode Dress</h3>
+            <p>₹2999</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="vacation">
+          <img src="vintagevibe.jpg" alt="Vintage Vibe Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Vintage Vibe Dress</h3>
+            <p>₹2599</p>
+          </div>
+        </div>
+        <div class="product-card" data-category="casual">
+          <img src="blackswan.jpg" alt="Black Swan Dress" />
+          <div class="wishlist" onclick="toggleWishlist(this)">♡</div>
+          <div class="info">
+            <h3>Black Swan Dress</h3>
+            <p>₹1999</p>
+          </div>
+        </div>
+      </section>
+      <button id="nextButton">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
